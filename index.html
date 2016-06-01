@@ -1,19 +1,68 @@
 <!DOCTYPE html>
-<html>
-    <head>
+<html><head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
         <title>Freelance Front End Web Development | Notepad Web Development</title>
         <meta name="description" content="This is the portfolio site of Stephen Griffin, a freelance front end web developer from Leeds, UK.">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta property="og:title" content="Notepad Web Development" />
-        <meta property="og:type" content="website" />
-        <meta property="og:url" content="http://notepadwebdevelopment.com/" />
-        <meta property="og:image" content="http://notepadwebdevelopment.com/img/og-image.jpg" />
-        <meta property="og:site_name" content="Notepad Web Development" />
-        <meta property="og:description" content="This is the personal site of Stephen Griffin, a front end web developer from Leeds, UK." />
-        <link rel="stylesheet" href="/css/normalize.css" />
-        <link rel="stylesheet" href="/css/main.css" />
+        <meta property="og:title" content="Notepad Web Development">
+        <meta property="og:type" content="website">
+        <meta property="og:url" content="http://notepadwebdevelopment.com/">
+        <meta property="og:image" content="http://notepadwebdevelopment.com/img/og-image.jpg">
+        <meta property="og:site_name" content="Notepad Web Development">
+        <meta property="og:description" content="This is the personal site of Stephen Griffin, a front end web developer from Leeds, UK.">
+        <style type="text/css">
+            
+            /* Normalise */
+            html { font-family: sans-serif; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; }
+            body { margin: 0; }
+            article,aside,footer,header,main,menu,nav,section { display: block; }
+            a { background-color: transparent; -webkit-text-decoration-skip: objects; }
+            a:active,a:hover { outline-width: 0; }
+            b,strong { font-weight: inherit; font-weight: bolder; }
+            small { font-size: 80%; }
+
+            /* Custom styles */
+            body {
+                font: normal 100%/1.4 sans-serif;
+                color: #181818;
+            }
+            body > div {
+                max-width: 32em;
+                padding: 0 2em;
+            }
+            h1 {
+                font-size: 2em;
+                line-height: 1.1em;
+                color: #000;
+            }
+            h2 {
+                margin-bottom: 0.4em;
+            }
+            h3 {
+                line-height: 1em;
+                margin: 0 0 .4em;
+            }
+            ul {
+                margin: 0 0 1.6em;
+                padding: 0;
+                list-style: none;
+            }
+            li {
+                line-height: 1.2em;
+                margin: 0 0 0.6em;
+            }
+            a {
+                text-decoration: none;
+            }
+            a:hover {
+                text-decoration: underline;
+            }
+            footer {
+                font-size: 0.75em;
+                color: #999;
+            }
+        </style>
     </head>
     <body>
         <div>
@@ -40,7 +89,7 @@
                 <ul>
                     <li><a href="http://amplifon.co.uk/strava-cycle-tracks/">Amplifon | Cycle Tracks</a></li>
                     <li><a href="http://www.amplifon.co.uk/sounds-of-street-view/">Amplifon | The Sounds of Street View</a></li>
-                    <li><a href="http://staging.bryanjamesdesign.co.uk/legacy/kick-my-habits/">Leeds Building Society | Kick My Habits</a></li>
+                    <li><a href="http://www.leedsbuildingsociety.co.uk/resources/kick-my-habits/">Leeds Building Society | Kick My Habits</a></li>
                     <li><a href="http://www.evanshalshaw.com/bondcars/">Evans Halshaw | Bond Cars</a></li>
                     <li><a href="http://www.sykescottages.co.uk/pin-the-uk/">Sykes Cottages | Pin the UK</a></li>
                     <li><a href="http://uk.protectyourbubble.com/iphone-timeline/">Protect My Bubble | iPhone Timeline</a></li>
@@ -73,7 +122,7 @@
                     <li><a href="http://interrobangband.co.uk/">Interrobang?!</a></li>
                     <li><a href="http://theotherthings.bandcamp.com/">The Other Things</a></li>
                     <li><a href="http://lymonwillis.bandcamp.com/">Lymon Willis</a></li>
-                    <li><a href="http://www.youtube.com/results?search_query=regular+fries&oq=regular+fries">Regular Fries</a></li>
+                    <li><a href="http://www.youtube.com/results?search_query=regular+fries&amp;oq=regular+fries">Regular Fries</a></li>
                     <li><a href="https://soundcloud.com/smaf-master">I used to make polyphonic ringtones</a></li>
                 </ul>
                 <h3>Photography</h3>
@@ -89,41 +138,67 @@
                     <h2>Contact</h2>
                 </header>
                 <ul>
-                    <li>E: notepadwebdev at gmail dot com</li>
-                    <li>T: <a href="https://twitter.com/notepadwebdev/">@notepadwebdev</a></li>
+                    <li>E: <a href="mailto:notepadwebdev@gmail.com">notepadwebdev@gmail.com</a></li><a href="mailto:notepadwebdev@gmail.com">
+                    </a><li><a href="mailto:notepadwebdev@gmail.com">T: </a><a href="https://twitter.com/notepadwebdev/">@notepadwebdev</a></li>
                     <li>L: <a href="https://www.linkedin.com/in/notepadwebdev">Linked in</a></li>
                 </ul>
             </section>
 
             <footer>
                 <p>
-                    &copy; Notepad Web Development Ltd 2016.  Registered in England and Wales under company number 10154922 Vat Reg No. 240324452
+                    © Notepad Web Development Ltd 2016.  Registered in England and Wales under company number 10154922. 
                     <span itemprop="address">
                         <span itemprop="streetAddress">41 Elder Road,</span> 
                         <span itemprop="addressLocality">Bramley,</span> 
                         <span itemprop="addressRegion">Leeds</span> 
-                        <span itemprop="postalCode">LS13 4DB.</span>
+                        <span itemprop="postalCode">LS13 4DB</span>
                     </span> 
                 </p>
             </footer>
         </div>
-    </body>
+    
 
-    <script src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
-    <script type="text/javascript">
-        $(function(){
-            $.getScript( "js/howler.js", function(){
+    <script async="" src="https://www.google-analytics.com/analytics.js"></script><script async="" src="js/howler.js"></script><script type="text/javascript"> 
+        (function(d, t) {
+            // Load Howler.js
+            var g = d.createElement(t),
+                s = d.getElementsByTagName(t)[0];
+            g.async = 'async';
+            g.src = 'js/howler.js';
+            s.parentNode.insertBefore(g, s);
 
-                var webProjects = new Howl({ urls: ['audio/switch12.wav'], volume: .6 });
-                $('#web-projects a').on('mouseenter', function(){ webProjects.play(); });
+            g.onload = g.onreadystatechange = function(){
+                
+                // Add hover sound for project links
+                var projectLinks = document.querySelectorAll('#web-projects a'),
+                    projectSound = new Howl({ urls: ['audio/switch12.wav'], volume: .6 });
+                for (var i = 0, len = projectLinks.length; i < len; i++) {
+                    projectLinks[i].addEventListener('mouseenter', function(){ projectSound.play(); });
+                }
 
-                var otherLinks = new Howl({ urls: ['audio/switch14.wav'], volume: .6 });
-                $('#other-links a').on('mouseenter', function(){ otherLinks.play(); });
+                // Add hover sound for other links
+                var otherLinks = document.querySelectorAll('#other-links a'),
+                    otherSound = new Howl({ urls: ['audio/switch14.wav'], volume: .6 });
+                for (var i = 0, len = otherLinks.length; i < len; i++) {
+                    otherLinks[i].addEventListener('mouseenter', function(){ otherSound.play(); });
+                }
 
-                var contactPress = new Howl({ urls: ['audio/echo_alert.wav'], volume: .3 });
-                $('#contact a, p a').on('mousedown', function(){ contactPress.play(); });
-
-            });
-        });
+                // Add sound on mousedown for all links
+                var allLinks = document.getElementsByTagName('a'),
+                    pressSound = new Howl({ urls: ['audio/echo_alert.wav'], volume: .3 });
+                for (var i = 0, len = allLinks.length; i < len; i++) {
+                    allLinks[i].addEventListener('mousedown', function(){ pressSound.play(); });
+                }
+            }
+        }(document, 'script'));
     </script>
-</html>
+
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+      ga('create', 'UA-77477108-1', 'auto');
+      ga('send', 'pageview');
+    </script>
+</body></html>
