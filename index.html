@@ -203,49 +203,48 @@
             </footer>
         </div>
 
+        <script type="text/javascript">
+            (function(d, t) {
+                // Load Howler.js
+                var g = d.createElement(t),
+                    s = d.getElementsByTagName(t)[0];
+                g.async = 'async';
+                g.src = 'js/howler.js';
+                s.parentNode.insertBefore(g, s);
 
-    <script async="" src="https://www.google-analytics.com/analytics.js"></script>
-    <script type="text/javascript">
-        (function(d, t) {
-            // Load Howler.js
-            var g = d.createElement(t),
-                s = d.getElementsByTagName(t)[0];
-            g.async = 'async';
-            g.src = 'js/howler.js';
-            s.parentNode.insertBefore(g, s);
+                g.onload = g.onreadystatechange = function(){
 
-            g.onload = g.onreadystatechange = function(){
+                    // Add hover sound for project links
+                    var projectLinks = document.querySelectorAll('#web-projects a'),
+                        projectSound = new Howl({ urls: ['audio/switch12.wav'], volume: .6 });
+                    for (var i = 0, len = projectLinks.length; i < len; i++) {
+                        projectLinks[i].addEventListener('mouseenter', function(){ projectSound.play(); });
+                    }
 
-                // Add hover sound for project links
-                var projectLinks = document.querySelectorAll('#web-projects a'),
-                    projectSound = new Howl({ urls: ['audio/switch12.wav'], volume: .6 });
-                for (var i = 0, len = projectLinks.length; i < len; i++) {
-                    projectLinks[i].addEventListener('mouseenter', function(){ projectSound.play(); });
+                    // Add hover sound for other links
+                    var otherLinks = document.querySelectorAll('#other-links a'),
+                        otherSound = new Howl({ urls: ['audio/switch14.wav'], volume: .6 });
+                    for (var i = 0, len = otherLinks.length; i < len; i++) {
+                        otherLinks[i].addEventListener('mouseenter', function(){ otherSound.play(); });
+                    }
+
+                    // Add sound on mousedown for all links
+                    var allLinks = document.getElementsByTagName('a'),
+                        pressSound = new Howl({ urls: ['audio/echo_alert.wav'], volume: .3 });
+                    for (var i = 0, len = allLinks.length; i < len; i++) {
+                        allLinks[i].addEventListener('mousedown', function(){ pressSound.play(); });
+                    }
                 }
+            }(document, 'script'));
+        </script>
 
-                // Add hover sound for other links
-                var otherLinks = document.querySelectorAll('#other-links a'),
-                    otherSound = new Howl({ urls: ['audio/switch14.wav'], volume: .6 });
-                for (var i = 0, len = otherLinks.length; i < len; i++) {
-                    otherLinks[i].addEventListener('mouseenter', function(){ otherSound.play(); });
-                }
-
-                // Add sound on mousedown for all links
-                var allLinks = document.getElementsByTagName('a'),
-                    pressSound = new Howl({ urls: ['audio/echo_alert.wav'], volume: .3 });
-                for (var i = 0, len = allLinks.length; i < len; i++) {
-                    allLinks[i].addEventListener('mousedown', function(){ pressSound.play(); });
-                }
-            }
-        }(document, 'script'));
-    </script>
-
-    <script>
-      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-      ga('create', 'UA-77477108-1', 'auto');
-      ga('send', 'pageview');
-    </script>
-</body></html>
+        <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+        ga('create', 'UA-77477108-1', 'auto');
+        ga('send', 'pageview');
+        </script>
+    </body>
+</html>
