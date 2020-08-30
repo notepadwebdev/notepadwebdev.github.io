@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html><head>
+<html>
+    <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
         <title>Freelance Front End Web Development | Notepad Web Development</title>
@@ -28,8 +29,10 @@
                 color: #181818;
             }
             body > div {
-                max-width: 32em;
                 padding: 0 2em;
+            }
+            section {
+                max-width: 32em;
             }
             h1 {
                 font-size: 2em;
@@ -192,18 +195,14 @@
 
             <footer>
                 <p>
-                    &copy; Notepad Web Development Ltd 2016. Registered in England and Wales under company number 10154922
-                    <span itemprop="address">
-                        <span itemprop="streetAddress">41 Elder Road,</span>
-                        <span itemprop="addressLocality">Bramley,</span>
-                        <span itemprop="addressRegion">Leeds</span>
-                        <span itemprop="postalCode">LS13 4DB</span>
-                    </span>
+                    &copy; Notepad Web Development Ltd <span id="date-year"></span>. Registered in England and Wales under company number 10154922
                 </p>
             </footer>
         </div>
 
         <script type="text/javascript">
+            document.getElementById('date-year').innerHTML = new Date().getFullYear();
+            
             (function(d, t) {
                 // Load Howler.js
                 var g = d.createElement(t),
