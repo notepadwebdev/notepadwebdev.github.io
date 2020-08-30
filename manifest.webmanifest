@@ -1,0 +1,22 @@
+{
+  "short_name": "NWD",
+  "name": "Notepad Web Development",
+  "description": "Portfolio site of Stephen Griffin, a freelance UI developer basin in Leeds, UK",
+  "icons": [
+    {
+      "src": "icon-192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "icon-512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": "/",
+  "background_color": "#FFFFFF",
+  "display": "minimal-ui",
+  "scope": "/",
+  "theme_color": "#181818"
+}
