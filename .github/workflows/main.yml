@@ -18,7 +18,7 @@ jobs:
           # Path to the local folder you want to copy.
           local: ./index.html
           # Path on the remote server to copy to.
-          remote: /var/www/html/
+          remote: /var/www/html/index.html
 
           # Hostname or IP address of the server.
           host: ${{ secrets.REMOTE_HOST }}
